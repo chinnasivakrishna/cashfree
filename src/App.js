@@ -37,7 +37,7 @@ function App() {
     try {
       console.log('Creating order with data:', paymentData);
       
-      const response = await fetch('http://localhost:5000/create-order', {
+      const response = await fetch('https://cashfree-backen.onrender.com/create-order', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -65,7 +65,7 @@ function App() {
     try {
       console.log('Verifying payment for order:', orderId);
       
-      const response = await fetch('http://localhost:5000/verify-payment', {
+      const response = await fetch('https://cashfree-backen.onrender.com/verify-payment', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
