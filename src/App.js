@@ -7,7 +7,7 @@ let cashfree;
 const initializeSDK = async () => {
   try {
     cashfree = await load({
-      mode: "production" // Production environment
+      mode: "production" 
     });
     console.log('✅ Cashfree SDK initialized successfully');
   } catch (error) {
